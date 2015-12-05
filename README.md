@@ -29,11 +29,11 @@ bash seafile-server-ubuntu-14-04-amd64-http 5.0.2
 
 该脚本运行完后会在命令行中打印配置信息和管理员账号密码，请仔细阅读。该脚本会自动判断服务器的 IP 地址，并设置配置文件中相应选项。如果检测到的 IP 地址不对，会影响网页端文件的上传和下载。如果出现这个问题，您需要修改两个配置条目：
 
-`/opt/seafile/conf/ccnet.conf` 中的 `SERVICE_URL`:
+- `/opt/seafile/conf/ccnet.conf` 中的 `SERVICE_URL`:
 
     SERVICE_URL = http://www.myseafile.com
 
-/opt/seafile/conf/seahub_settings.py 中的 `FILE_SERVER_ROOT`:
+- `/opt/seafile/conf/seahub_settings.py` 中的 `FILE_SERVER_ROOT`:
 
     FILE_SERVER_ROOT = 'http://www.myseafile.com/seafhttp'
 
